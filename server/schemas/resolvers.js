@@ -11,7 +11,30 @@ const resolvers = {
         return userData;
       }
       throw new AuthenticationError('Error login');
+    },
+
+    Mutation: {
+      createUser: async (parent, args) => {
+        const user = await User.create(args);
+        const token = signToken(user);
+  
+        return { token, user };
+      },
+      login: async (parent, { email, password }) => {
+        const user = await User.findOne({ email });
+        if (!user) {
+          throw new AuthenticationError('Wrong credentials');
+        }
+        const correctPw = await user.wrongPassword(password);
+        if (!correctPw) {
+          throw new AuthenticationError('Wrong credentials');
+        }
+  
+        const token = signToken(user);
+        return { token, user };
+      },
     }
+
   }};
 
 module.exports = resolvers;
