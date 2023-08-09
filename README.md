@@ -5,7 +5,9 @@
 
 ## Description
 
-I created a Google Books search engine using the public Google API. Users can sign up and save books. The project was built with REACT, NodeJs, ExpressJs, and NoSQL. It started as a Restful API and was transformed into GraphQL, condensing multiple routes into one endpoint for Queries and Mutations. Data is stored in a MongoDB database, and user access is controlled by JWT. This MERN Stack project utilizes Apollo Client for GraphQL, along with Mongoose and NodeJs packages. It's live on Heroku.
+I Refactored from REST API to GraphQL a Google Books search engine using the public Google API. Users can sign up and save books. The project was built with REACT, NodeJs, ExpressJs, and NoSQL. It started as a Restful API and was transformed into GraphQL, condensing multiple routes into one endpoint for Queries and Mutations. Data is stored in a MongoDB database, and user access is controlled by JWT. This MERN Stack project utilizes Apollo Client for GraphQL, along with Mongoose and NodeJs packages. It's live on Heroku.
+
+The Apollo conection is still under development.
 
 ## ScreenShot
 
