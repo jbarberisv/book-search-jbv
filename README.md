@@ -9,7 +9,7 @@ I created a Google Books search engine using the public Google API. Users can si
 
 ## ScreenShot
 
-![alt screenshot]()
+![alt screenshot](https://github.com/jbarberisv/book-search-jbv/blob/main/assets/images/Screenshot.png?raw=true)
 
 ## Features and Technology
 
